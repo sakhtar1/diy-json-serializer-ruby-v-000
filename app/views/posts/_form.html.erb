@@ -11,6 +11,11 @@
     </div>
   <% end %>
 
+  <div class="authorName">
+    <%= f.label :@post.author.name %><br>
+    <%= f.text_field :name %>
+  </div>
+
   <div class="postTitle">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
