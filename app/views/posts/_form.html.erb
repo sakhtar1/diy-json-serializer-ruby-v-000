@@ -11,22 +11,17 @@
     </div>
   <% end %>
 
-  <div class="authorName">
-    <%= f.label :'@post.author.name' %><br>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="postTitle">
+  <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
 
-  <div class="postBody">
+  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
   </div>
 
   <div class="actions">
-    <%= f.submit @post.persisted? ? "Update Post" : "Submit Post" %>
+    <%= f.submit %>
   </div>
 <% end %>
